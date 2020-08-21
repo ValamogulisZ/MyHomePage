@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <div id="topAnchor" class="head">
+      <a class="headPic left" href="home.html">
+        <img src="Profile_Photo.jpeg" alt="No_Img_Avail.jpg" title="profile photo">
+      </a>
+      <h1 id="i1" class="welcome left"> Welcome&nbsp;to&nbsp;Wenda's&nbsp;Home&nbsp;Page&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+    </div>
+    <div class="menu">
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <a class="menu_item" href="home.html">Home</a>
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      <a class="menu_item" href="resume.html">Resume</a>
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <a class="menu_item" href="contact.html">Contact</a>
+      <i class="fa fa-picture-o" aria-hidden="true"></i>
+      <a class="menu_item" href="profolio.html">Profolio</a>
+    </div>
+    <div class="body bodyItems">
+      <h2>Introduction</h2>
+      <p>Hi there! Welcome to my home page. </p>
+      <p>You can explore this website to know about me.</p>
+    </div>
+    <div class="bottom">
+
+    </div>
+    <a class="backTop" href="#topAnchor">
+          TOP
+    </a>
+
+    <script>
+      alert("Hello!")
+      function f1(){
+        var tag = document.getElementById('i1');
+        var content = tag.innerText;
+        var f = content.charAt(0);
+        var l = content.substring(1, content.length);
+        var new_content = l + f;
+        tag.innerText = new_content;
+      }
+      setInterval("f1()",500);
+    </script>
+  </body>
+</html>
